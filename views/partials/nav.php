@@ -61,8 +61,8 @@
                     </div>
                     <?php if ($_SESSION['user'] ?? false) : ?>
                         <div class="relative ml-3">
-                            <form action="/session" method="post">
-                                <input type="hidden" name="_method" value="DELETE">
+                            <form method="post" action="/session">
+                                <input type="hidden" name="_method" value="DELETE"/>
 
                                 <button class="text-white">Log out</button>
                             </form>
