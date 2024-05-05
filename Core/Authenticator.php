@@ -31,14 +31,8 @@ class Authenticator
         session_regenerate_id(true);
     }
 
-    public function logout()
+    public static function logout()
     {
-        $_SESSION = [];
-        session_destroy();
-
-        $params = session_get_cookie_params();
-
-        setcookie('PHPSESSID', '', time() - 3600, $params['path'], $params['domain']);
-
+        Session::destroy();
     }
 }
