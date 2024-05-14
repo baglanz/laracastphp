@@ -1,0 +1,16 @@
+{
+    "name": "baglan/demo",
+    "authors": [
+        {
+            "name": "baglanz",
+            "email": "baglan.zhaksylyk98@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}
